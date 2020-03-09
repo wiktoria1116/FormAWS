@@ -1,0 +1,113 @@
+<!Doctype HTML>
+<html lang="pl">
+ <head>
+  <meta cherset = "utf-8" />
+  {% from "_formhelpers.html" import render_field %}
+  <form method=post action="" >
+   <style                    `>
+
+    #container
+    {
+    background-color:beige;
+    width: auto;
+    margin-left: auto;
+    margin-right:auto;
+    }
+
+    #left
+    {
+    width:600px;
+    background-color:lightgrey;
+    margin-left:400px;
+    }
+
+    #center
+    {
+    margin-left:100px;
+    }
+
+    #odpowiedzi
+    {
+    margin-left: 30px;
+    }
+   </style>
+ </head>
+
+ <body>
+  <div id="container">
+   <div id="left">
+    <div id="center">
+     <h1> Kwestionariusz dotyczący prawdopodobieństwa wystąpienia choroby Downa </h1>
+     <h2> Kwestionariusz służy do wnioskowania na temat prawdopodobieństwa występowania choroby Downa u dzieci </h2>
+      </br>
+      {{ render_field(form.wiek_matki) }}
+      </br>
+      {{ render_field(form.wiek_ojca) }}
+      </br>
+ 3.Podaj objawy
+      </br>
+      Zmiany w wyglądzie:
+       <div id="odpowiedzi">
+        </br>
+        {{ form.krotka_szyja }} Krótka szyja
+        </br>
+        {{ form.male_hypoplastyczne_malzowiny_uszne }} Małe  hypoplastyczne małżowiny uszne
+        </br>
+        {{ form.plaska_twarz }} Płaska twarz
+        </br>
+        {{ form.krotkie_dlonie }} Krótkie dłonie
+        </br>
+        {{ form.skosno_ustawione_powieki }} Skośno ustawione powieki
+        </br>
+       </div>
+      Inne
+       <div id="odpowiedzi">
+        </br>
+        {{ form.opozniony_rozwoj }} Opóźniony rozwój
+        </br>
+        {{ form.wady_serca }} Wady serca
+        </br>
+        {{ form.wady_sluchu }} Wady słuchu
+        </br>
+        {{ form.wady_wzroku }} Wady wzroku
+        </br>
+        {{ form.obnizona_odpornosc }} Obniżona odpornosść
+        </br>
+       </div>
+      </br>
+      {{ render_field(form.ilosc_dzieci_w_rodzinie) }}
+      </br>
+      {{ render_field(form.wystepowanie) }}
+      </br>
+      {{ render_field(form.kontakt_z_prom) }}
+      </br>
+      {{ render_field(form.kontakt_z_sub) }}
+      </br>
+      {{ render_field(form.leki) }}
+      </br>
+       {{ render_field(form.ciaza) }}
+      </br>
+      {{ render_field(form.odstep) }}
+      </br>
+	  </br>
+        <div id = "odpowiedzi">
+         <p>
+         </br>
+         </br>
+         </br>
+          <h2>
+
+           </h2>
+         <input type=submit value=Potwierdź>
+         </form>
+        </div>
+      </p>
+      </br>
+      </br>
+      </br>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+         

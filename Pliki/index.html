@@ -1,0 +1,76 @@
+{% from "_formhelpers.html" import render_field %}
+<body>
+<form method=post>
+ <style>
+
+  #container
+  {
+  background-color:beige;
+  width: auto;
+  height: 670px;
+  }
+  #logo
+  {
+  text-align:center;
+  }
+  #left
+  {
+  width:300px;
+  float:left;
+  padding:70px;
+  }
+
+  #center
+  {
+  float:left;
+  background-color:lightgrey;
+  padding:40px;
+  height:500px;
+  width:300px;
+  text-align:center;
+  }
+
+  #right
+  {
+  float:left;
+  width:300px;
+  padding:70px;
+  }
+
+ </style>
+
+ <div id="container">
+  <div id="logo">
+    <h1>Choroba Downa</h1>
+  </div>
+  <div id="left">
+   <img src="https://www.hellozdrowie.pl/wp-content/uploads/2018/11/trisomia-21-1140x760.jpg" alt="" width="300" height="199" />
+  </br>
+     </br>
+   <img src="http://bi.gazeta.pl/im/4e/09/16/z23107406IER,Dziewczynka-z-zespolem-Downa.jpg" alt="" width="300" height="199"/>
+  </div>
+
+  <div id="center">
+   Zespół Downa jest trisomią 21. pary chromosomów. Oznacza to, że przy 21. parze jest dodatkowy, trzeci chromosom lub jego fragment.
+
+Zespół Downa jest dość częstą chorobą genetyczną występuje z częstotliwością wahająca się od 1:800 do 1:1000 żywych urodzeń.
+
+Do tej pory nie udało się określić żadnych czynników fizycznych wpływających na zwiększenie ryzyka wystąpienia zespołu Downa. Wykryto natomiast korelację między wiekiem matki a prawdopodobieństwem urodzenia dziecka z trisomią 21. pary. Warto wspomnieć, że u kobiet po 30. roku życia ryzyko urodzenia dziecka z zespołem Downa jest niemal dwukrotnie większe niż u kobiet mających 20 lat.
+Ta choroba charakteryzuje się niepełnosprawnością intelektualną w stopniu lekkim lub średnim. Oprócz teg występuje szereg zaburzeń w budowie i funkcjonowaniu organizmu.
+     </br>
+Choroba zawdzięcza swoją nazwę odkrywcy - lekarz John Langdon Down zidentyfikował ją w 1862 roku.
+     </br>
+     </br>
+   <h2>
+     <a href="{{ url_for('.new_project') }}"> Kwestionariusz dotyczący choroby Downa </a>
+   </h2>
+  </div>
+  <div id="right">
+   <img src="https://zdrowie.tvn.pl/media/cache/content_cover/xzespol-downa-jpeg.jpeg.pagespeed.ic.5g7X0AdjGD.jpg" alt"" width="300" height="199" />
+    </br></br>
+   <img src="http://www.twoje-zdrowie.com.pl/wp-content/uploads/2010/11/zespol_downa_wada_denetyczna-300x199.jpg" alt="" width="300" height="199" />
+  </div>
+
+ </div>
+
+</body>
